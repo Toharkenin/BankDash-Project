@@ -1,6 +1,8 @@
 :root{
     // css variables
     --primary-color: #2D60FF;
+    --header-color: #343C6A;
+    --light-color: #F5F7FA;
 }
 
 
@@ -33,7 +35,7 @@ body {
             align-items: center;
             
             &__name {
-                color: #343C6A;
+                color: var(--header-color);
                 font-family: 'Mont', sans-serif;
                 font-size: 25px;
                 font-weight: 900;
@@ -92,11 +94,58 @@ body {
         .main-header {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            align-items: center;
+            justify-content:flex-end;
+            border-bottom: 0.08rem solid #E6EFF5;
+
+            .page_name {
+                font-size: 25px;
+                font-weight: 600;
+                line-height: 31.95px;
+                text-align: left;
+                color: var(--header-color);
+                flex-grow: 1;
+                margin-left: 1.5rem;
+            }
+            
+            .user-img {
+                border-radius: 50%;
+                width: 2.8rem;
+                height: 2.8rem;
+                margin: 0 1.3rem 0 1.3rem;
+            }
+
+            .search-input {
+                background-color: var(--light-color);
+                border:none;
+                outline:none;
+                display:inline-block;
+                height:34px;
+                border-radius:22px;
+                width:16rem;
+                box-sizing:border-box;
+                padding:0 2rem; 
+            }
+
+            .search-icon {
+                position: relative;
+                left: 1.8rem;
+            }
+
+            .button {
+                border-radius: 50%;
+                width: 2rem;
+                height: 2rem;
+                border: none;
+                background-color: var(--light-color);
+                cursor: pointer;
+                display:inline-block;
+                margin-left: 1.3rem;
+            }
         }
 
         .page {
-            background-color: #F5F7FA;
+            background-color: var(--light-color);
         }
     }
 
