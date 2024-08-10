@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-size: 17px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20%;
+  grid-auto-columns: 80%;
+  grid-template-rows: 10%;
+  grid-auto-rows: 90%;
+}
+.container .logo {
+  grid-column: 1;
+  grid-row: 1;
+}
+.container .logo .logo-name {
+  color: #343C6A;
+}
+.container .aside {
+  background-color: orange;
+  grid-column: 1;
+  grid-row: 2;
+}
+.container .main-header {
+  background-color: green;
+  grid-column: 2;
+  grid-row: 1;
+}
+.container .page {
+  background-color: blue;
+  grid-column: 2;
+  grid-row: 2;
+}

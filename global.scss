@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-size: 17px;
+    box-sizing: border-box;
+}
+
+//375
+//1024
+
+.container {
+    width:100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20%;
+    grid-auto-columns: 80%;
+    grid-template-rows: 10%;
+    grid-auto-rows: 90%;
+    
+    
+    .logo {
+        grid-column: 1;
+        grid-row: 1;
+        
+        .logo-name {
+            color: #343C6A;
+        }
+    }
+
+    .aside {
+        background-color: orange;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .main-header {
+        background-color: green;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .page {
+        background-color: blue;
+        grid-column: 2;
+        grid-row: 2;
+
+    }
+}
