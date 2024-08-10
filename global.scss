@@ -1,47 +1,83 @@
 body {
     margin: 0;
     font-size: 17px;
+    font-family: "Inter", sans-serif;
     box-sizing: border-box;
 }
 
 //375
 //1024
 
-.container {
+.wrapper {
     width:100vw;
     height: 100vh;
-    display: grid;
-    grid-template-columns: 20%;
-    grid-auto-columns: 80%;
-    grid-template-rows: 10%;
-    grid-auto-rows: 90%;
+    display: flex;
+    flex-direction: row;
     
     
-    .logo {
-        grid-column: 1;
-        grid-row: 1;
-        
-        .logo-name {
-            color: #343C6A;
+    .aside {
+        width: 18%;
+        border-right: 0.08rem solid #E6EFF5;
+
+        .logo {
+            grid-column: 1;
+            grid-row: 1;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            &__name {
+                color: #343C6A;
+                font-family: 'Mont', sans-serif;
+                font-size: 25px;
+                font-weight: 900;
+                line-height: 31.95px;
+                text-align: left;
+            }
+    
+            &__img {
+                width: 2rem;
+                margin: 1rem 0.5rem 1rem 1rem ;
+            }
+        }
+
+        .menu {
+
+            .menu-item {
+                display: flex;
+                flex-direction: row;
+                text-decoration: none;
+
+                &__icon{
+
+                    .current {
+                        color: #2D60FF;
+                    }
+                    
+                    width: 1.3rem;
+                }
+
+                &__text {
+                    color: #2D60FF;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 19.36px;
+                    text-align: left;
+                }
+            }
         }
     }
 
-    .aside {
-        background-color: orange;
-        grid-column: 1;
-        grid-row: 2;
+    .main-page {
+        width: 82%;
+
+        .header {
+
+        }
+
+        .page {
+
+        }
     }
 
-    .main-header {
-        background-color: green;
-        grid-column: 2;
-        grid-row: 1;
-    }
-
-    .page {
-        background-color: blue;
-        grid-column: 2;
-        grid-row: 2;
-
-    }
 }
