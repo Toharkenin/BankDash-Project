@@ -21,6 +21,31 @@ body {
   width: 18%;
   border-right: 0.08rem solid #E6EFF5;
 }
+@media (max-width: 1200px) {
+  .wrapper .aside {
+    width: 22%;
+  }
+}
+@media (max-width: 1024px) {
+  .wrapper .aside {
+    width: 25%;
+  }
+}
+@media (max-width: 900px) {
+  .wrapper .aside {
+    width: 30%;
+  }
+}
+@media (max-width: 800px) {
+  .wrapper .aside {
+    width: 33%;
+  }
+}
+@media (max-width: 700px) {
+  .wrapper .aside {
+    display: none;
+  }
+}
 .wrapper .aside .logo {
   grid-column: 1;
   grid-row: 1;
@@ -35,6 +60,11 @@ body {
   font-weight: 900;
   line-height: 31.95px;
   text-align: left;
+}
+@media (max-width: 800px) {
+  .wrapper .aside .logo__name {
+    font-size: 20px;
+  }
 }
 .wrapper .aside .logo__img {
   width: 2rem;
@@ -76,9 +106,30 @@ body {
 .wrapper .main-page .main-header {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  border-bottom: 0.08rem solid #E6EFF5;
+}
+@media (min-width: 700px) {
+  .wrapper .main-page .main-header {
+    align-items: center;
+    border-bottom: 0.08rem solid #E6EFF5;
+  }
+}
+@media (max-width: 700px) {
+  .wrapper .main-page .main-header {
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 700px) {
+  .wrapper .main-page .main-header .hamburger-menu {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .wrapper .main-page .main-header .hamburger-menu {
+    margin-left: 2rem;
+    cursor: pointer;
+  }
 }
 .wrapper .main-page .main-header .page_name {
   font-size: 25px;
@@ -88,6 +139,11 @@ body {
   color: var(--header-color);
   flex-grow: 1;
   margin-left: 1.5rem;
+}
+@media (max-width: 700px) {
+  .wrapper .main-page .main-header .page_name {
+    font-size: 1.2rem;
+  }
 }
 .wrapper .main-page .main-header .user-img {
   border-radius: 50%;
@@ -106,9 +162,22 @@ body {
   box-sizing: border-box;
   padding: 0 2rem;
 }
+@media (max-width: 700px) {
+  .wrapper .main-page .main-header .search-input {
+    position: relative;
+    top: 3rem;
+  }
+}
 .wrapper .main-page .main-header .search-icon {
   position: relative;
   left: 1.8rem;
+}
+@media (max-width: 700px) {
+  .wrapper .main-page .main-header .search-icon {
+    position: relative;
+    top: 3.3rem;
+    z-index: 999;
+  }
 }
 .wrapper .main-page .main-header .button {
   border-radius: 50%;
@@ -119,6 +188,11 @@ body {
   cursor: pointer;
   display: inline-block;
   margin-left: 1.3rem;
+}
+@media (max-width: 700px) {
+  .wrapper .main-page .main-header .button {
+    display: none;
+  }
 }
 .wrapper .main-page .page {
   background-color: var(--light-color);

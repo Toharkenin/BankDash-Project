@@ -27,6 +27,23 @@ body {
         width: 18%;
         border-right: 0.08rem solid #E6EFF5;
 
+        //media queries
+        @media  (max-width: 1200px) {
+            width: 22%
+        }
+        @media  (max-width: 1024px) {
+            width: 25%
+        }
+        @media  (max-width: 900px) {
+            width: 30%
+        }
+        @media (max-width: 800px) {
+            width: 33%;
+        }
+        @media (max-width: 700px) {
+            display: none;
+        }
+
         .logo {
             grid-column: 1;
             grid-row: 1;
@@ -41,6 +58,10 @@ body {
                 font-weight: 900;
                 line-height: 31.95px;
                 text-align: left;
+
+                @media (max-width: 800px) {
+                    font-size: 20px;
+                }
             }
     
             &__img {
@@ -94,10 +115,30 @@ body {
         .main-header {
             display: flex;
             flex-direction: row;
-            align-items: center;
-            justify-content:flex-end;
-            border-bottom: 0.08rem solid #E6EFF5;
 
+            @media (min-width: 700px) {
+                
+                align-items: center;
+                border-bottom: 0.08rem solid #E6EFF5;
+                // justify-content:flex-end;
+            }
+            
+            @media (max-width: 700px) {
+                width: 100vw;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .hamburger-menu{
+
+                @media (min-width: 700px) {
+                    display: none;  
+                }
+                @media (max-width: 700px) {
+                    margin-left: 2rem;
+                    cursor: pointer;  
+                }
+            }
             .page_name {
                 font-size: 25px;
                 font-weight: 600;
@@ -106,6 +147,11 @@ body {
                 color: var(--header-color);
                 flex-grow: 1;
                 margin-left: 1.5rem;
+
+                @media (max-width: 700px) {
+                    font-size: 1.2rem; 
+                    
+                }
             }
             
             .user-img {
@@ -113,6 +159,10 @@ body {
                 width: 2.8rem;
                 height: 2.8rem;
                 margin: 0 1.3rem 0 1.3rem;
+
+                @media (max-width: 700px) {
+                    // align-self: center;
+                }
             }
 
             .search-input {
@@ -125,11 +175,23 @@ body {
                 width:16rem;
                 box-sizing:border-box;
                 padding:0 2rem; 
+
+                @media (max-width: 700px) {
+                    // display: none;
+                    position: relative;
+                    top: 3rem;
+                }
             }
 
             .search-icon {
                 position: relative;
                 left: 1.8rem;
+
+                @media (max-width: 700px) {
+                    position: relative;
+                    top: 3.3rem;
+                    z-index: 999;
+                }
             }
 
             .button {
@@ -141,6 +203,10 @@ body {
                 cursor: pointer;
                 display:inline-block;
                 margin-left: 1.3rem;
+
+                @media (max-width: 700px) {
+                    display: none;
+                }
             }
         }
 
