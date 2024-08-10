@@ -1,0 +1,11 @@
+.page .topic .card-front {
+  background-color: var(--primary-color);
+  border-radius: 2rem;
+  width: 20rem;
+}
+.page .topic .card-back {
+  background-color: #fff;
+  border-radius: 2rem;
+  width: 20rem;
+  border: 1px solid #000;
+}
