@@ -1,19 +1,68 @@
 .page {
-    
-    .topic {
-        
-        .card-front {
-            background-color: var(--primary-color);
-            border-radius: 2rem;
-            width: 20rem
+    display: grid;
+    grid-template-rows: auto auto auto; /* 3 rows */
+    gap: 10px; /* Space between items */
 
+    .row-1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 2 columns */
+        // gap: 10px;
+    .topic {
+    //     display: grid;
+
+        .title {
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 26.63px;
+            text-align: left;
+            color: var(--header-color);
+            margin-left: 1.5rem;
         }
 
-        .card-back {
-            background-color: #fff;
-            border-radius: 2rem;
-            width: 20rem;
-            border: 1px solid #000;
+        .cards-button {
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-align: right;
+            margin-top: 0.5rem;
+            text-decoration: none;
+            color: var(--header-color);
+        }
+
+            .card {
+                height: 14rem;
+                border-radius: 2rem;
+                margin-left: 1.5rem;
+                margin-top: 0.4rem;
+                border-radius: 25px;
+            }
+    
+            .card-front {
+                background-image: linear-gradient(to right, #4C49ED, #0A06F4);
+
+                .card-bottom {
+                    background-image: linear-gradient(#ffffff3f, #00000014);
+                    border-bottom-left-radius: 2rem;
+                    border-bottom-right-radius: 2rem;
+                    height: 4rem;
+                    position: relative;
+                    top: 10rem;
+                }
+            }
+    
+            .card-back {
+                background-color: #fff;
+                border: 0.1rem solid #E6EFF5;
+                margin-top: 0.5rem;
+                position: relative;
+                top: 1.3rem;
+            }
+
+            .transaction-card {
+                background-color: #fff;
+                margin-right: 1.5rem;
+            }
         }
     }
-}
+        
+    }
+// }

@@ -1,11 +1,57 @@
-.page .topic .card-front {
-  background-color: var(--primary-color);
-  border-radius: 2rem;
-  width: 20rem;
+.page {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  /* 3 rows */
+  gap: 10px;
+  /* Space between items */
 }
-.page .topic .card-back {
-  background-color: #fff;
+.page .row-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 2 columns */
+}
+.page .row-1 .topic .title {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 26.63px;
+  text-align: left;
+  color: var(--header-color);
+  margin-left: 1.5rem;
+}
+.page .row-1 .topic .cards-button {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: right;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  color: var(--header-color);
+}
+.page .row-1 .topic .card {
+  height: 14rem;
   border-radius: 2rem;
-  width: 20rem;
-  border: 1px solid #000;
+  margin-left: 1.5rem;
+  margin-top: 0.4rem;
+  border-radius: 25px;
+}
+.page .row-1 .topic .card-front {
+  background-image: linear-gradient(to right, #4C49ED, #0A06F4);
+}
+.page .row-1 .topic .card-front .card-bottom {
+  background-image: linear-gradient(#ffffff3f, #00000014);
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  height: 4rem;
+  position: relative;
+  top: 10rem;
+}
+.page .row-1 .topic .card-back {
+  background-color: #fff;
+  border: 0.1rem solid #E6EFF5;
+  margin-top: 0.5rem;
+  position: relative;
+  top: 1.3rem;
+}
+.page .row-1 .topic .transaction-card {
+  background-color: #fff;
+  margin-right: 1.5rem;
 }
