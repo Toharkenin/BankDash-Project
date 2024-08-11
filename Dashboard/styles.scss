@@ -1,14 +1,12 @@
 .page {
     display: grid;
-    grid-template-rows: auto auto auto; /* 3 rows */
-    gap: 10px; /* Space between items */
+    grid-template-rows: auto auto auto;
+    gap: 10px;
 
     .row-1 {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 2 columns */
-        // gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
     .topic {
-    //     display: grid;
 
         .title {
             font-size: 1rem;
@@ -23,13 +21,15 @@
             font-size: 0.8rem;
             font-weight: 600;
             text-align: right;
-            margin-top: 0.5rem;
+            top: 1rem;
+            left: 18rem;
             text-decoration: none;
             color: var(--header-color);
+            position: relative;
         }
 
             .card {
-                height: 14rem;
+                height: 12rem;
                 border-radius: 2rem;
                 margin-left: 1.5rem;
                 margin-top: 0.4rem;
@@ -39,30 +39,76 @@
             .card-front {
                 background-image: linear-gradient(to right, #4C49ED, #0A06F4);
 
-                .card-bottom {
+                &__bottom {
                     background-image: linear-gradient(#ffffff3f, #00000014);
                     border-bottom-left-radius: 2rem;
                     border-bottom-right-radius: 2rem;
                     height: 4rem;
                     position: relative;
-                    top: 10rem;
+                    // top: 10rem;
                 }
             }
     
             .card-back {
                 background-color: #fff;
-                border: 0.1rem solid #E6EFF5;
+                border: 0.1rem solid #DFEAF2
+                ;
                 margin-top: 0.5rem;
                 position: relative;
                 top: 1.3rem;
+
+                &__bottom {
+                    border: 0.1rem solid #DFEAF2;
+                    border-bottom-left-radius: 2rem;
+                    border-bottom-right-radius: 2rem;
+                    height: 4rem;
+                    position: relative;
+                }
             }
 
-            .transaction-card {
+            .transaction {
                 background-color: #fff;
                 margin-right: 1.5rem;
+
+                &__wrapper {
+
+                    display: flex;
+                    flex-direction: row;
+
+                    .img {
+                        background-color: #FFF5D9;
+                        height: 2.2rem;
+                        width: 2.2rem;
+                        border-radius: 50%;
+                        .icon {
+                            height:1.8rem
+                        }
+                    }
+                    .topic {
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 19.36px;
+                        text-align: left;
+                        color: #232323;
+
+                    }
+                    .amount {
+                        font-size: 16px;
+                        color: red;
+                    }
+                    .pos {
+                        color: green;
+                    }
+                    .paypal {
+                        background-color: #E7EDFF;
+                    }
+                    .jemi {
+                        background-color: #DCFAF8;
+
+                    }
+                }
             }
         }
     }
         
     }
-// }

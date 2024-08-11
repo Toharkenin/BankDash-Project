@@ -1,14 +1,11 @@
 .page {
   display: grid;
   grid-template-rows: auto auto auto;
-  /* 3 rows */
   gap: 10px;
-  /* Space between items */
 }
 .page .row-1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* 2 columns */
 }
 .page .row-1 .topic .title {
   font-size: 1rem;
@@ -22,12 +19,14 @@
   font-size: 0.8rem;
   font-weight: 600;
   text-align: right;
-  margin-top: 0.5rem;
+  top: 1rem;
+  left: 18rem;
   text-decoration: none;
   color: var(--header-color);
+  position: relative;
 }
 .page .row-1 .topic .card {
-  height: 14rem;
+  height: 12rem;
   border-radius: 2rem;
   margin-left: 1.5rem;
   margin-top: 0.4rem;
@@ -36,22 +35,61 @@
 .page .row-1 .topic .card-front {
   background-image: linear-gradient(to right, #4C49ED, #0A06F4);
 }
-.page .row-1 .topic .card-front .card-bottom {
+.page .row-1 .topic .card-front__bottom {
   background-image: linear-gradient(#ffffff3f, #00000014);
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
   height: 4rem;
   position: relative;
-  top: 10rem;
 }
 .page .row-1 .topic .card-back {
   background-color: #fff;
-  border: 0.1rem solid #E6EFF5;
+  border: 0.1rem solid #DFEAF2;
   margin-top: 0.5rem;
   position: relative;
   top: 1.3rem;
 }
-.page .row-1 .topic .transaction-card {
+.page .row-1 .topic .card-back__bottom {
+  border: 0.1rem solid #DFEAF2;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  height: 4rem;
+  position: relative;
+}
+.page .row-1 .topic .transaction {
   background-color: #fff;
   margin-right: 1.5rem;
+}
+.page .row-1 .topic .transaction__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.page .row-1 .topic .transaction__wrapper .img {
+  background-color: #FFF5D9;
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 50%;
+}
+.page .row-1 .topic .transaction__wrapper .img .icon {
+  height: 1.8rem;
+}
+.page .row-1 .topic .transaction__wrapper .topic {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+  color: #232323;
+}
+.page .row-1 .topic .transaction__wrapper .amount {
+  font-size: 16px;
+  color: red;
+}
+.page .row-1 .topic .transaction__wrapper .pos {
+  color: green;
+}
+.page .row-1 .topic .transaction__wrapper .paypal {
+  background-color: #E7EDFF;
+}
+.page .row-1 .topic .transaction__wrapper .jemi {
+  background-color: #DCFAF8;
 }
