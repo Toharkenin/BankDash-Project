@@ -1,3 +1,4 @@
+
 .page {
     display: grid;
     grid-template-rows: auto auto auto;
@@ -5,7 +6,9 @@
 
     .row-1 {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3%;
+        padding-inline: 3%;
     .topic {
 
         .title {
@@ -29,9 +32,8 @@
         }
 
             .card {
-                height: 12rem;
+                height: 40vh;
                 border-radius: 2rem;
-                margin-left: 1.5rem;
                 margin-top: 0.4rem;
                 border-radius: 25px;
             }
@@ -51,8 +53,7 @@
     
             .card-back {
                 background-color: #fff;
-                border: 0.1rem solid #DFEAF2
-                ;
+                border: 0.1rem solid #DFEAF2;
                 margin-top: 0.5rem;
                 position: relative;
                 top: 1.3rem;
@@ -68,7 +69,8 @@
 
             .transaction {
                 background-color: #fff;
-                margin-right: 1.5rem;
+                // margin-right: 1.5rem;
+                align-items: center;
 
                 &__wrapper {
 
@@ -80,10 +82,16 @@
                         height: 2.2rem;
                         width: 2.2rem;
                         border-radius: 50%;
+                        
                         .icon {
-                            height:1.8rem
+                            height:1.5rem;
+                            width:1.5rem;
+                            position: relative;
+                            left: 0.3rem;
+                            top: 0.3rem;
                         }
                     }
+
                     .topic {
                         font-size: 16px;
                         font-weight: 500;
@@ -92,12 +100,25 @@
                         color: #232323;
 
                     }
+                    .date {
+                        font-family: Inter;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 18.15px;
+                        text-align: left;
+                        font-family: "Inter", sans-serif;
+                    }
                     .amount {
                         font-size: 16px;
-                        color: red;
+                        color: #FF4B4A;
+                        font-family: Inter;
+                        font-weight: 500;
+                        line-height: 19.36px;
+                        text-align: right;
                     }
                     .pos {
-                        color: green;
+                        color: #41D4A8;
+                        ;
                     }
                     .paypal {
                         background-color: #E7EDFF;
@@ -110,5 +131,140 @@
             }
         }
     }
+
+        .row-2 {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3%;
+            padding-inline: 3%;
+
+            .topic {
+
+                .title {
+                    font-size: 1rem;
+                    font-weight: 600;
+                    line-height: 26.63px;
+                    text-align: left;
+                    color: var(--header-color);
+                    margin-left: 1.5rem;
+                }
+
+                .container {
+                    height: 14rem;
+                    border-radius: 2rem;
+                    margin-top: 0.4rem;
+                    border-radius: 25px;
+                    background-color: #fff;
+                    padding: 1rem;
+                    left: 0.1rem;
+
+
+                    .graph-chart {
+                        
+                    }
+                    .pie-chart-part-1 {
+                        width:11.5rem;
+                        height: 11.5rem;
+                        border-radius: 50%;
+                        background: conic-gradient(#343C6A 0deg 90deg, transparent 90deg 360deg);
+                        transform: rotate(-45deg);
+                        position: relative;
+                        // .pie-chart-text {
+                        //     transform: rotate(45deg);
+                        //     text-align: center;
+                        //     font-family: "Inter", sans-serif;
+                        //     font-size: 9px;
+                        //     font-weight: 700;
+                        //     line-height: 18px;
+                        //     color: #fff;
+                        // }
+                    }
+
+                    .pie-chart {
+
+                    }
+                    .pie-chart-part-2 {
+                        width:13rem;
+                        height: 13rem;
+                        border-radius: 50%;
+                        background: conic-gradient(#FC7900 0deg 45deg, transparent 45deg 360deg);
+                        transform: rotate(45deg);
+                        position: relative;
+                        bottom: 12.9rem;
+                        right: 0.1rem;
+                    }
+                    .pie-chart-part-4 {
+                        width:10.5rem;
+                        height: 10.5rem;
+                        border-radius: 50%;
+                        background: conic-gradient(#1814F3 0deg 90deg, transparent 90deg 360deg);
+                        transform: rotate(90deg);
+                        position: relative;
+                        bottom: 35.5rem;
+                        left: 0.5rem;
+                    }
+                    .pie-chart-part-3 {
+                        width:10rem;
+                        height: 10rem;
+                        border-radius: 50%;
+                        background: conic-gradient(#FA00FF 0deg 135deg, transparent 135deg 360deg);
+                        transform: rotate(-180deg);
+                        position: relative;
+                        bottom: 25rem;
+                        left: 0.3rem;
+                    }
+                    .pie-chart-text {
+                        transform: rotate(45deg);
+                        text-align: center;
+                        font-family: "Inter", sans-serif;
+                        font-size: 13px;
+                        font-weight: 700;
+                        line-height: 18px;
+                        color: #fff;
+                    }
+                    
+                }
+                
+                
+
+                
+            }
+        }
+
+
+        .row-3 {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3%;
+            padding-inline: 3%;
+
+            .topic {
+
+                .title {
+                    font-size: 1rem;
+                    font-weight: 600;
+                    line-height: 26.63px;
+                    text-align: left;
+                    color: var(--header-color);
+                    margin-left: 1.5rem;
+                }
+
+                .container {
+                    height: 14rem;
+                    border-radius: 2rem;
+                    // margin-left: 1.5rem;
+                    margin-top: 0.4rem;
+                    border-radius: 25px;
+                    background-color: #fff;
+                    margin-bottom: 2rem;
+
+                
+                }
+
+                .blance {
+                    // margin-right: 1.5rem;
+                }
+        }
         
     }
+}
