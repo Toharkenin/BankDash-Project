@@ -2,6 +2,7 @@
   display: grid;
   grid-template-rows: auto auto auto;
   gap: 10px;
+  flex: 1;
 }
 .page .row-1 {
   display: grid;
@@ -125,13 +126,144 @@
   margin-left: 1.5rem;
 }
 .page .row-2 .topic .container {
-  height: 14rem;
+  height: 40vh;
   border-radius: 2rem;
   margin-top: 0.4rem;
   border-radius: 25px;
   background-color: #fff;
-  padding: 1rem;
   left: 0.1rem;
+}
+.page .row-2 .topic .container .series {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.3rem;
+  justify-content: flex-end;
+}
+.page .row-2 .topic .container .series__diposit {
+  width: 1rem;
+  height: 1rem;
+  background-color: #16DBCC;
+  border-radius: 50%;
+}
+.page .row-2 .topic .container .series__withdraw {
+  width: 1rem;
+  height: 1rem;
+  background-color: #FF82AC;
+  border-radius: 50%;
+}
+.page .row-2 .topic .container .series .text {
+  font-family: Inter;
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: #718EBF;
+  margin-right: 2rem;
+}
+.page .row-2 .topic .container .chart-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.3rem;
+  justify-content: flex-end;
+  margin-inline: 2rem;
+}
+.page .row-2 .topic .container .chart-top .vertical-numbers {
+  margin-top: -2rem;
+}
+.page .row-2 .topic .container .chart-top .vertical-numbers > .number {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.1rem;
+  text-align: right;
+  color: #718EBF;
+}
+.page .row-2 .topic .container .chart-top .chart-lines > hr {
+  width: 40rem;
+  border: 1px solid #F3F3F5;
+  margin-bottom: 1.8rem;
+}
+.page .row-2 .topic .container .chart-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.3rem;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 6.6rem;
+  right: 4rem;
+  z-index: 999;
+}
+.page .row-2 .topic .container .chart-bottom .chart-data-left {
+  background-color: #1814F3;
+  height: 5rem;
+  width: 0.7rem;
+  border-radius: 0.5rem;
+  margin-right: 0.6rem;
+}
+.page .row-2 .topic .container .chart-bottom .chart-data-right {
+  background-color: #16DBCC;
+  height: 5rem;
+  width: 0.7rem;
+  border-radius: 0.5rem;
+  margin-right: 2.6rem;
+}
+.page .row-2 .topic .container .chart-bottom .left-sat {
+  height: 10rem;
+  margin-top: -5rem;
+}
+.page .row-2 .topic .container .chart-bottom .right-sat {
+  height: 7rem;
+  margin-top: -2rem;
+}
+.page .row-2 .topic .container .chart-bottom .right-sun {
+  height: 3rem;
+  margin-top: 2rem;
+}
+.page .row-2 .topic .container .chart-bottom .left-mon {
+  height: 8rem;
+  margin-top: -3rem;
+}
+.page .row-2 .topic .container .chart-bottom .right-tue {
+  height: 2rem;
+  margin-top: 3rem;
+}
+.page .row-2 .topic .container .chart-bottom .left-wed {
+  height: 10rem;
+  margin-top: -5rem;
+}
+.page .row-2 .topic .container .chart-bottom .left-thu {
+  height: 3.5rem;
+  margin-top: 1.5rem;
+}
+.page .row-2 .topic .container .chart-bottom .right-thu {
+  height: 4rem;
+  margin-top: 1rem;
+}
+.page .row-2 .topic .container .chart-bottom .left-fri {
+  height: 6rem;
+  margin-top: -1rem;
+}
+.page .row-2 .topic .container .chart-bottom .right-fri {
+  height: 3.5rem;
+  margin-top: 1.5rem;
+}
+.page .row-2 .topic .container .days {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  gap: 3.8rem;
+  position: relative;
+  bottom: 6.6rem;
+  left: 6rem;
+}
+.page .row-2 .topic .container .days .day {
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  color: #718EBF;
+  z-index: 1000;
 }
 .page .row-2 .topic .container .pie-chart-part-1 {
   width: 11.5rem;
@@ -140,6 +272,11 @@
   background: conic-gradient(#343C6A 0deg 90deg, transparent 90deg 360deg);
   transform: rotate(-45deg);
   position: relative;
+}
+.page .row-2 .topic .container .pie-chart-part-1 .pie-chart-text {
+  transform: rotate(45deg);
+  left: 3rem;
+  top: 2rem;
 }
 .page .row-2 .topic .container .pie-chart-part-2 {
   width: 13rem;
@@ -151,6 +288,11 @@
   bottom: 12.9rem;
   right: 0.1rem;
 }
+.page .row-2 .topic .container .pie-chart-part-2 .pie-chart-text {
+  transform: rotate(-45deg);
+  top: 1.5rem;
+  left: 2rem;
+}
 .page .row-2 .topic .container .pie-chart-part-4 {
   width: 10.5rem;
   height: 10.5rem;
@@ -160,6 +302,11 @@
   position: relative;
   bottom: 35.5rem;
   left: 0.5rem;
+}
+.page .row-2 .topic .container .pie-chart-part-4 .pie-chart-text {
+  transform: rotate(-90deg);
+  top: 2rem;
+  left: 2rem;
 }
 .page .row-2 .topic .container .pie-chart-part-3 {
   width: 10rem;
@@ -171,13 +318,17 @@
   bottom: 25rem;
   left: 0.3rem;
 }
+.page .row-2 .topic .container .pie-chart-part-3 .pie-chart-text {
+  transform: rotate(180deg);
+  left: 2.3rem;
+  top: 2.7rem;
+}
 .page .row-2 .topic .container .pie-chart-text {
-  transform: rotate(45deg);
   text-align: center;
   font-family: "Inter", sans-serif;
-  font-size: 13px;
+  font-size: 10px;
   font-weight: 700;
-  line-height: 18px;
+  position: relative;
   color: #fff;
 }
 .page .row-3 {

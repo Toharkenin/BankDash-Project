@@ -3,6 +3,7 @@
     display: grid;
     grid-template-rows: auto auto auto;
     gap: 10px;
+    flex:1;
 
     .row-1 {
         display: grid;
@@ -150,18 +151,159 @@
                 }
 
                 .container {
-                    height: 14rem;
+                    height: 40vh;
                     border-radius: 2rem;
                     margin-top: 0.4rem;
                     border-radius: 25px;
                     background-color: #fff;
-                    padding: 1rem;
                     left: 0.1rem;
 
+                        .series{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 0.3rem;
+                            justify-content: flex-end;
 
-                    .graph-chart {
-                        
-                    }
+                            &__diposit {
+                                width: 1rem;
+                                height: 1rem;
+                                background-color: #16DBCC;
+                                border-radius: 50%;
+
+                            }
+                            
+                            &__withdraw {
+                                width: 1rem;
+                                height: 1rem;
+                                background-color: #FF82AC;
+                                border-radius: 50%;
+                            }
+                            .text {
+                                font-family: Inter;
+                                font-size: 0.9rem;
+                                font-weight: 400;
+                                font-family: "Inter", sans-serif;
+                                color: #718EBF;
+                                margin-right: 2rem;
+
+                            }
+                        }
+                        .chart-top {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 0.3rem;
+                            justify-content: flex-end;
+                            margin-inline: 2rem;
+
+                            .vertical-numbers {
+                                margin-top: -2rem;
+                            }
+
+                            .vertical-numbers > .number {
+                                font-family: "Inter", sans-serif;;
+                                font-size: 13px;
+                                font-weight: 400;
+                                line-height: 1.1rem;
+                                text-align: right;
+                                color: #718EBF;
+                                
+                            }
+                            .chart-lines > hr{
+                                width: 40rem;
+                                border:  1px solid #F3F3F5;
+                                // margin-top:1.7rem;
+                                margin-bottom: 1.8rem;
+                            }
+                        }
+
+                        .chart-bottom {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 0.3rem;
+                            justify-content: flex-end;
+                            position: relative;
+                            bottom: 6.6rem;
+                            right: 4rem;
+                            z-index: 999;
+
+                            .chart-data-left {
+                                background-color: #1814F3;
+                                height: 5rem;
+                                width: 0.7rem;
+                                border-radius: 0.5rem;
+                                margin-right: 0.6rem;
+                            }
+                            .chart-data-right {
+                                background-color: #16DBCC;
+                                height: 5rem;
+                                width: 0.7rem;
+                                border-radius: 0.5rem;
+                                margin-right: 2.6rem;
+                            }
+                            .left-sat {
+                                height: 10rem;
+                                margin-top: -5rem;
+                            }
+                            .right-sat {
+                                height: 7rem;
+                                margin-top: -2rem;
+                            }
+                            .right-sun {
+                                height: 3rem;
+                                margin-top:2rem;
+                            }
+                            .left-mon {
+                                height: 8rem;
+                                margin-top: -3rem;
+                            }
+                            .right-tue {
+                                height: 2rem;
+                                margin-top:3rem;
+                            }
+                            .left-wed {
+                                height: 10rem;
+                                margin-top: -5rem;
+                            }
+                            .left-thu {
+                                height: 3.5rem;
+                                margin-top: 1.5rem;
+                            }
+                            .right-thu {
+                                height: 4rem;
+                                margin-top: 1rem;
+                            }
+                            .left-fri {
+                                height: 6rem;
+                                margin-top: -1rem;
+                            }
+                            .right-fri {
+                                height: 3.5rem;
+                                margin-top: 1.5rem;
+                            }
+                        }
+
+                        .days {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 0.3rem;
+                            gap: 3.8rem;
+                            position: relative;
+                            bottom: 6.6rem;
+                            left: 6rem;
+
+                            .day {
+                                font-size: 13px;
+                                font-weight: 400;
+                                text-align: center;
+                                color: #718EBF;
+                                z-index: 1000;
+                            }
+                        }
+                    
+
                     .pie-chart-part-1 {
                         width:11.5rem;
                         height: 11.5rem;
@@ -169,19 +311,11 @@
                         background: conic-gradient(#343C6A 0deg 90deg, transparent 90deg 360deg);
                         transform: rotate(-45deg);
                         position: relative;
-                        // .pie-chart-text {
-                        //     transform: rotate(45deg);
-                        //     text-align: center;
-                        //     font-family: "Inter", sans-serif;
-                        //     font-size: 9px;
-                        //     font-weight: 700;
-                        //     line-height: 18px;
-                        //     color: #fff;
-                        // }
-                    }
-
-                    .pie-chart {
-
+                        .pie-chart-text {
+                            transform: rotate(45deg);
+                            left: 3rem;
+                            top: 2rem;
+                        }
                     }
                     .pie-chart-part-2 {
                         width:13rem;
@@ -192,6 +326,11 @@
                         position: relative;
                         bottom: 12.9rem;
                         right: 0.1rem;
+                        .pie-chart-text {
+                            transform: rotate(-45deg);
+                            top: 1.5rem;
+                            left: 2rem;
+                        }
                     }
                     .pie-chart-part-4 {
                         width:10.5rem;
@@ -202,6 +341,11 @@
                         position: relative;
                         bottom: 35.5rem;
                         left: 0.5rem;
+                        .pie-chart-text {
+                            transform: rotate(-90deg);
+                            top:2rem;
+                            left: 2rem;
+                        }
                     }
                     .pie-chart-part-3 {
                         width:10rem;
@@ -212,14 +356,18 @@
                         position: relative;
                         bottom: 25rem;
                         left: 0.3rem;
+                        .pie-chart-text {
+                            transform: rotate(180deg);
+                            left: 2.3rem;
+                            top: 2.7rem;
+                        }
                     }
                     .pie-chart-text {
-                        transform: rotate(45deg);
                         text-align: center;
                         font-family: "Inter", sans-serif;
-                        font-size: 13px;
+                        font-size: 10px;
                         font-weight: 700;
-                        line-height: 18px;
+                        position:relative;
                         color: #fff;
                     }
                     
@@ -261,9 +409,6 @@
                 
                 }
 
-                .blance {
-                    // margin-right: 1.5rem;
-                }
         }
         
     }
