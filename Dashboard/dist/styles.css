@@ -36,13 +36,72 @@
 }
 .page .row-1 .topic .card-front {
   background-image: linear-gradient(to right, #4C49ED, #0A06F4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.page .row-1 .topic .card-front .top-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-inline: 2rem;
+  align-items: center;
+}
+.page .row-1 .topic .card-front .top-card .balance__header {
+  font-family: "Lato", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: #fff;
+  margin-top: 1.7rem;
+}
+.page .row-1 .topic .card-front .top-card .balance__amount {
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: center;
+  margin-top: -0.2rem;
+  color: #fff;
+}
+.page .row-1 .topic .card-front .middle-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-inline: 2rem;
+}
+.page .row-1 .topic .card-front .middle-card .part__header {
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+  font-weight: 200;
+  line-height: 12px;
+  text-align: left;
+  color: #fff;
+}
+.page .row-1 .topic .card-front .middle-card .part__content {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15.6px;
+  text-align: left;
+  color: #fff;
 }
 .page .row-1 .topic .card-front__bottom {
   background-image: linear-gradient(#ffffff3f, #00000014);
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
   height: 4rem;
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3.5rem;
+  align-items: center;
+}
+.page .row-1 .topic .card-front__bottom .card-number {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #fff;
 }
 .page .row-1 .topic .card-back {
   background-color: #fff;
@@ -358,6 +417,7 @@
   flex-direction: row;
   justify-content: center;
   gap: 1.5rem;
+  cursor: pointer;
 }
 .page .row-3 .topic .container .users .user__name {
   font-size: 12px;
@@ -412,6 +472,7 @@
   border-radius: 50px;
   padding: 0 2rem 0 0.4rem;
   position: relative;
+  cursor: pointer;
 }
 .page .row-3 .topic .container .send-amount .send-icon {
   position: relative;
