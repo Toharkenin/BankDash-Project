@@ -201,32 +201,18 @@
                     }
                 }
             }
-            
-    
-            // .card-back {
-            //     background-color: #fff;
-            //     border: 0.1rem solid #DFEAF2;
-            //     margin-top: 0.5rem;
-            //     position: relative;
-            //     top: 1.3rem;
-
-            //     &__bottom {
-            //         border: 0.1rem solid #DFEAF2;
-            //         border-bottom-left-radius: 2rem;
-            //         border-bottom-right-radius: 2rem;
-            //         height: 4rem;
-            //         position: relative;
-            //     }
-            // }
 
             .transaction {
                 background-color: #fff;
-                align-items: center;
+                
 
                 &__wrapper {
 
                     display: flex;
                     flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-inline: 1rem;
 
                     .img {
                         background-color: #FFF5D9;
@@ -249,11 +235,12 @@
                         line-height: 19.36px;
                         text-align: left;
                         color: #232323;
+                        align-self: flex-end;
 
                     }
                     .date {
                         font-family: Inter;
-                        font-size: 15px;
+                        font-size: 0.8rem;
                         font-weight: 400;
                         line-height: 18.15px;
                         text-align: left;
@@ -368,7 +355,7 @@
                             }
                         }
 
-                        .chart-bottom {
+                        .chart-bars {
                             display: flex;
                             flex-direction: row;
                             align-items: center;

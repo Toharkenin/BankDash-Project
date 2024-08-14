@@ -177,11 +177,13 @@
 }
 .page .row-1 .topic .transaction {
   background-color: #fff;
-  align-items: center;
 }
 .page .row-1 .topic .transaction__wrapper {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: 1rem;
 }
 .page .row-1 .topic .transaction__wrapper .img {
   background-color: #FFF5D9;
@@ -202,10 +204,11 @@
   line-height: 19.36px;
   text-align: left;
   color: #232323;
+  align-self: flex-end;
 }
 .page .row-1 .topic .transaction__wrapper .date {
   font-family: Inter;
-  font-size: 15px;
+  font-size: 0.8rem;
   font-weight: 400;
   line-height: 18.15px;
   text-align: left;
@@ -301,7 +304,7 @@
   border: 1px solid #F3F3F5;
   margin-bottom: 1.8rem;
 }
-.page .row-2 .topic .container .chart-bottom {
+.page .row-2 .topic .container .chart-bars {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -312,57 +315,57 @@
   right: 4rem;
   z-index: 999;
 }
-.page .row-2 .topic .container .chart-bottom .chart-data-left {
+.page .row-2 .topic .container .chart-bars .chart-data-left {
   background-color: #1814F3;
   height: 5rem;
   width: 0.7rem;
   border-radius: 0.5rem;
   margin-right: 0.6rem;
 }
-.page .row-2 .topic .container .chart-bottom .chart-data-right {
+.page .row-2 .topic .container .chart-bars .chart-data-right {
   background-color: #16DBCC;
   height: 5rem;
   width: 0.7rem;
   border-radius: 0.5rem;
   margin-right: 2.6rem;
 }
-.page .row-2 .topic .container .chart-bottom .left-sat {
+.page .row-2 .topic .container .chart-bars .left-sat {
   height: 10rem;
   margin-top: -5rem;
 }
-.page .row-2 .topic .container .chart-bottom .right-sat {
+.page .row-2 .topic .container .chart-bars .right-sat {
   height: 7rem;
   margin-top: -2rem;
 }
-.page .row-2 .topic .container .chart-bottom .right-sun {
+.page .row-2 .topic .container .chart-bars .right-sun {
   height: 3rem;
   margin-top: 2rem;
 }
-.page .row-2 .topic .container .chart-bottom .left-mon {
+.page .row-2 .topic .container .chart-bars .left-mon {
   height: 8rem;
   margin-top: -3rem;
 }
-.page .row-2 .topic .container .chart-bottom .right-tue {
+.page .row-2 .topic .container .chart-bars .right-tue {
   height: 2rem;
   margin-top: 3rem;
 }
-.page .row-2 .topic .container .chart-bottom .left-wed {
+.page .row-2 .topic .container .chart-bars .left-wed {
   height: 10rem;
   margin-top: -5rem;
 }
-.page .row-2 .topic .container .chart-bottom .left-thu {
+.page .row-2 .topic .container .chart-bars .left-thu {
   height: 3.5rem;
   margin-top: 1.5rem;
 }
-.page .row-2 .topic .container .chart-bottom .right-thu {
+.page .row-2 .topic .container .chart-bars .right-thu {
   height: 4rem;
   margin-top: 1rem;
 }
-.page .row-2 .topic .container .chart-bottom .left-fri {
+.page .row-2 .topic .container .chart-bars .left-fri {
   height: 6rem;
   margin-top: -1rem;
 }
-.page .row-2 .topic .container .chart-bottom .right-fri {
+.page .row-2 .topic .container .chart-bars .right-fri {
   height: 3.5rem;
   margin-top: 1.5rem;
 }
