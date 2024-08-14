@@ -273,13 +273,51 @@
   margin-top: 0.4rem;
   border-radius: 25px;
   margin-inline: 3%;
+  margin-bottom: 5rem;
+  padding-bottom: 2rem;
 }
 .page .transactions-table .table-titles {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin: 3% 10% 0 3%;
 }
 .page .transactions-table .table-titles .table-title {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #718EBF;
+}
+.page .transactions-table hr {
+  margin-inline: 3%;
+}
+.page .transactions-table .table-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3% 10% 0 3%;
+  gap: 3%;
+}
+.page .transactions-table .table-line__item {
   font-size: 12px;
   font-weight: 500;
   color: #718EBF;
+}
+.page .transactions-table .table-line .des {
+  margin-left: -3.2rem;
+}
+.page .transactions-table .table-line .download-btn {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 50px;
+  border: 0.1rem solid #123288;
+  color: #123288;
+  background-color: #fff;
+  cursor: pointer;
+  margin-right: -2rem;
+}
+.page .transactions-table .table-line .item-amount-neg {
+  color: #FE5C73;
+}
+.page .transactions-table .table-line .item-amount-pos {
+  color: #16DBAA;
 }
