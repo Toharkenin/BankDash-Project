@@ -116,7 +116,7 @@ body {
 @media (max-width: 700px) {
   .wrapper .main-page .main-header {
     width: 100vw;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
   }
 }
@@ -129,6 +129,7 @@ body {
   .wrapper .main-page .main-header .hamburger-menu {
     margin-left: 2rem;
     cursor: pointer;
+    flex: 0 1 calc(33.3% -10px);
   }
 }
 .wrapper .main-page .main-header .page_name {
@@ -143,6 +144,8 @@ body {
 @media (max-width: 700px) {
   .wrapper .main-page .main-header .page_name {
     font-size: 1.2rem;
+    position: relative;
+    left: 25%;
   }
 }
 .wrapper .main-page .main-header .user-img {
@@ -150,6 +153,11 @@ body {
   width: 2.8rem;
   height: 2.8rem;
   margin: 0 1.3rem 0 1.3rem;
+}
+@media (max-width: 700px) {
+  .wrapper .main-page .main-header .user-img {
+    flex: 0 1 calc(33.3% -10px);
+  }
 }
 .wrapper .main-page .main-header .search-input {
   background-color: var(--light-color);
@@ -164,8 +172,10 @@ body {
 }
 @media (max-width: 700px) {
   .wrapper .main-page .main-header .search-input {
-    position: relative;
+    position: absolute;
     top: 3rem;
+    width: 80%;
+    margin-top: 0.5rem;
   }
 }
 .wrapper .main-page .main-header .search-icon {
@@ -174,8 +184,9 @@ body {
 }
 @media (max-width: 700px) {
   .wrapper .main-page .main-header .search-icon {
-    position: relative;
-    top: 3.3rem;
+    position: absolute;
+    top: 4.1rem;
+    margin-left: 6%;
     z-index: 999;
   }
 }
