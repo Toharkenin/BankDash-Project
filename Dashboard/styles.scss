@@ -10,6 +10,13 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 3%;
         padding-inline: 3%;
+        
+        @media (max-width: 700px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.2rem;
+            // overflow: hidden;
+        }
+
     .topic {
 
         .title {
@@ -37,6 +44,14 @@
                 border-radius: 2rem;
                 margin-top: 0.4rem;
                 border-radius: 25px;
+                @media  (max-width: 900px) {
+                    height: 30vh;
+                    width: 40vw;
+                }
+                @media (max-width: 700px) {
+                    width: 15rem;
+                }
+        
             }
     
             .card-front {
@@ -58,6 +73,9 @@
                             font-weight: 300;
                             color: #fff;
                             margin-top: 1.7rem;
+                                @media (max-width: 800px) {
+                                    font-size: 0.5rem;
+                                }
                         }
                         &__amount {
                             font-family: "Lato", sans-serif;
@@ -439,8 +457,7 @@
                                 z-index: 1000;
                             }
                         }
-                    
-
+                       
                     .pie-chart-part-1 {
                         width:11.5rem;
                         height: 11.5rem;
@@ -508,6 +525,11 @@
                         color: #fff;
                     }  
                 }  
+                // .container-statistic{
+                //     margin-right: 15%;
+
+                // }
+
             }
         }
 

@@ -208,3 +208,9 @@ body {
 .wrapper .main-page .page {
   background-color: var(--light-color);
 }
+@media (max-width: 700px) {
+  .wrapper .main-page .page {
+    background-color: #fff;
+    margin-top: 4rem;
+  }
+}
